@@ -74,10 +74,8 @@ endif
 
 #USE_DISPLAY_SERVICE from Android O onwards
 #to receive vsync event from display
-ifeq ($(call is-platform-sdk-version-at-least,26),true)
 USE_DISPLAY_SERVICE := true
 LOCAL_CFLAGS += -DUSE_DISPLAY_SERVICE
-endif
 
 LOCAL_CFLAGS += -std=c++11 -std=gnu++1y
 
